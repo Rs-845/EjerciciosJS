@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+
+        window.onload = function () {
+            parrafos = document.getElementsByTagName("p");
+            for (i = 0; i < parrafos.length; i++) {
+                parrafos[i].onmouseover = cambiarColor;
+
+            }
+
+        }
+         
+
+        //recuperamos componentes con getElementsByTagName y los almacenamos en un array
+
+        function cambiarParrafos() {
+            parrafos = document.getElementsByTagName("p");
+            for (i = 0; i < parrafos.length; i++) {
+                parrafos[i].style.backgroundColor = "yellow";
+                parrafos[i].innerHTML = i;
+            }
+        }
+        function cambiarColor(){
+           // this.style.backgroundColor=document.getElementsByName("colores")[0].value;
+           this.style.backgroundColor=document.getElementById("id_color").value;
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <select id="id_color" name="colores">
+        <option value="red">Rojo</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+    </select>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eligendi quisquam dicta laudantium, culpa suscipit
+        iste expedita illo fugiat quae perferendis molestias quod officia consequatur dignissimos facilis eius sunt
+        repellat.</p>
+    <p>Est sed deleniti quia cumque unde assumenda autem, quo aspernatur magni, dolorem nesciunt fugiat, libero iste
+        maiores vero quos eius labore placeat. Possimus perspiciatis itaque nesciunt nobis, maiores ducimus sequi?</p>
+    <p>Nisi rem quibusdam magni sed aperiam molestias dolore, maiores porro exercitationem quaerat? Pariatur nostrum
+        porro debitis eius quidem ab quia obcaecati molestiae dolorum, alias laborum, reiciendis animi delectus quisquam
+        consequatur!</p>
+    <p>Nulla, perspiciatis. Perspiciatis, magni tempora mollitia repudiandae iste maxime illum, dicta laborum vel
+        veritatis consequuntur soluta earum nam eligendi blanditiis excepturi exercitationem, nihil molestiae! Natus
+        neque ipsam accusamus commodi nisi.</p>
+    <p>Maiores quo, quos explicabo voluptatum vitae maxime nesciunt. Sequi fuga consequuntur nesciunt maxime doloribus,
+        praesentium ab. Exercitationem consequatur quod recusandae, obcaecati, eius necessitatibus modi inventore
+        provident, minima veritatis tempore ipsam.</p>
+    <p>Maiores ipsa voluptatum natus sit ad suscipit placeat mollitia unde, voluptatem consectetur ab obcaecati,
+        adipisci dolores! Et amet quisquam ut, debitis, impedit minus saepe hic dignissimos rerum numquam explicabo
+        aliquam.</p>
+    <p>Itaque quos voluptates ipsam quasi asperiores blanditiis accusamus facere sint nostrum molestiae beatae
+        temporibus obcaecati magni explicabo, reiciendis, reprehenderit vitae sequi neque autem. Consectetur,
+        perferendis. Incidunt vero ullam magni obcaecati?</p>
+    <p>Illum, dolorum, veritatis, voluptatum a facere exercitationem reiciendis quae eos officiis praesentium ratione
+        id. Magnam consequuntur optio sint harum ullam dignissimos ad perspiciatis, deleniti vero omnis possimus,
+        placeat eius animi!</p>
+    <p>Distinctio voluptatibus perferendis adipisci itaque quia animi! Fugit, architecto quis doloremque tenetur
+        quibusdam cupiditate, laboriosam dignissimos totam obcaecati reiciendis nisi? Placeat ipsam modi aperiam soluta
+        exercitationem fugit deleniti illo veniam.</p>
+    <p>Nobis similique consequatur natus consectetur, saepe quod, obcaecati dolorem fugit inventore doloribus eligendi
+        libero iure delectus placeat omnis quia hic provident. Amet temporibus, excepturi dolores officia dolorem
+        expedita molestias iure?</p>
+    <input type="button" value="Cambiar párrafos" onclick="cambiarParrafos()">
+     
+</body>
+
+</html>

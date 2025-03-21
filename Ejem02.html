@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        nombres = [33,true,3.3,"Pedro","Maria","Ana","Luis","Carlos","Rosa","Laura"]
+        document.write("<table border='1'>")
+        for(i=0;i<nombres.length;i++){
+            document.write("<tr><td>"+nombres[i]+"</td></tr>")
+        }
+        document.write("</table>")
+
+        miArray=new Array(10)
+        for(i=0;i<miArray.length;i++){
+            miArray[i]=parseInt(prompt("Dame un número"))
+        }
+        contador=0
+        for(i=0;i<miArray.length;i++){
+            contador=contador+miArray[i]
+        }
+        document.write("La suma de los elementos del array es: "+contador)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

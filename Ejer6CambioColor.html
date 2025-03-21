@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+         function generarTabla() {
+            let filas = document.getElementById("filas").value;
+            let columnas = document.getElementById("columnas").value;
+            let tabla = document.getElementById("tabla");
+ 
+            for (let i = 0; i < filas; i++) {
+                let fila = document.createElement("tr");
+
+                for (let j = 0; j < columnas; j++) {
+                    let celda = document.createElement("td");
+
+                    // Aplicar estilos en línea
+                    celda.style.width = "40px";
+                    celda.style.height = "40px";
+                    celda.style.border = "1px solid black";
+                    celda.style.textAlign = "center";
+
+                    // Cambia el color al pasar el ratón
+                    celda.addEventListener("mouseenter", function () {
+                        this.style.backgroundColor = "yellow";
+                    });
+
+                    // Cambia el color al salir del ratón
+                    celda.addEventListener("mouseleave", function () {
+                        this.style.backgroundColor = "green";
+                    });
+
+                    fila.appendChild(celda);
+                }
+
+                tabla.appendChild(fila);
+            }
+        }
+        
+
+
+
+
+    </script>
+</head>
+<body>
+    
+    <!-- Ejercicio 6. Crea dos casillas input type=”text” para recuperar de ellas el número de filas y
+columnas que tendrá una tabla al pulsar un botón “Generar tabla”. La tabla se generará de tal
+forma que al entrar en una celda se activa color de fondo amarrillo. Si la celda ha sido visitada
+el color de fondo de esa celda cuando el ratón no está ya en ella será verde. Si se vuelve a
+visitar una celda en la que previamente se ha estado se activa también de amarillo y al salir
+también se queda como estaba, verde. -->
+<label>Filas: <input type="number" id="filas"></label>
+    <label>Columnas: <input type="number" id="columnas"></label>
+    <button onclick="generarTabla()">Generar Tabla</button>
+
+    <table id="tabla"></table>
+
+</body>
+</html>

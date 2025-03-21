@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        //var nombre = "Gregorio";
+        //nombre="Gregorio";
+        nombre="Gregorio"
+
+
+
+        document.write("Hola <a href='https://gregoriofer.com'> Mundo</a>"+nombre)
+        console.log("Hola Mundo")
+        
+        //document.write('<table border="1">')
+        document.write("<table border='1'>")
+            
+         for(i=0;i<10;i++){
+             document.write("<tr><td>"+i+"</td><td>"+5+"</td><td>"+i*5+"</td></tr>")
+        }
+        document.write("</table>")
+
+        variable=1,variable2="2",variable3=3
+        document.write(variable+variable2+variable3)
+
+        
+        document.write("<h1>Hola Mundo</h1>")
+       for(i=0;i<7;i++){
+           document.write("<h "+i+">Hola Mundo</h"+i+">")
+       }    
+
+    alert("Hola Mundo") 
+    confirm("Estas seguro?")
+       if(confirm("Estas seguro?")){
+           alert("Has pulsado aceptar")
+       }
+ //alert("Hola Mundo")
+ if (confirm("Estas seguro?")){
+            alert("Si")
+        }else{
+            alert("No")
+        }
+        //var nombre = prompt("Cual es tu nombre?","Victor")
+        nombre = prompt("Cual es tu nombre?")
+        document.write("Hola "+nombre)
+
+        //numero=prompt("Dame un numero y te lo multiplico por 5")
+        numero=parseInt(prompt("Dame un numero y te lo multiplico por 5"))
+        document.write("El resultado es: "+(numero+5))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
